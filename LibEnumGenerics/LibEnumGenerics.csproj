@@ -23,6 +23,9 @@
         <None Update="Documents\Japanese\LibEnumGenerics.xml">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
+        <None Update="Documents\English\LibEnumGenerics.xml">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
     </ItemGroup>
 
 </Project>

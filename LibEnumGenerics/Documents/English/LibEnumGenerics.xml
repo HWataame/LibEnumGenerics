@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<!--
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Document of "Utilities for using generics in enum"
+(英語版 / English version)
+
+LibEnumGenerics.xml
+────────────────────────────────────────
+2025 Wataame(HWataame)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+-->
+<doc>
+    <assembly>
+        <name>LibEnumGenerics</name>
+    </assembly>
+    <members>
+        <member name="T:System.Enum`1">
+            <summary>
+                Utilities for using generics in enum
+            </summary>
+            <typeparam name="T">Type of Enum</typeparam>
+        </member>
+        <member name="F:System.Enum`1.enumSize">
+            <summary>
+                Size of Enum Value Field
+            </summary>
+        </member>
+        <member name="M:System.Enum`1.#cctor">
+            <summary>
+                Initialization
+            </summary>
+        </member>
+        <member name="M:System.Enum`1.ToEnum(System.Byte)">
+            <summary>
+                Convert 8 bits integer value to enum value
+            </summary>
+            <param name="value">Integer value</param>
+            <returns>Enum value</returns>
+        </member>
+        <member name="M:System.Enum`1.ToEnum(System.SByte)">
+            <summary>
+                Convert 8 bits integer value to enum value
+            </summary>
+            <param name="value">Integer value</param>
+            <returns>Enum value</returns>
+        </member>
+        <member name="M:System.Enum`1.ToEnum(System.UInt16)">
+            <summary>
+                Convert 16 bits integer value to enum value
+            </summary>
+            <param name="value">Integer value</param>
+            <returns>Enum value</returns>
+        </member>
+        <member name="M:System.Enum`1.ToEnum(System.Int16)">
+            <summary>
+                Convert 16 bits integer value to enum value
+            </summary>
+            <param name="value">Integer value</param>
+            <returns>Enum value</returns>
+        </member>
+        <member name="M:System.Enum`1.ToEnum(System.UInt32)">
+            <summary>
+                Convert 32 bits integer value to enum value
+            </summary>
+            <param name="value">Integer value</param>
+            <returns>Enum value</returns>
+        </member>
+        <member name="M:System.Enum`1.ToEnum(System.Int32)">
+            <summary>
+                Convert 32 bits integer value to enum value
+            </summary>
+            <param name="value">Integer value</param>
+            <returns>Enum value</returns>
+        </member>
+        <member name="M:System.Enum`1.ToEnum(System.UInt64)">
+            <summary>
+                Convert 64 bits integer value to enum value
+            </summary>
+            <param name="value">Integer value</param>
+            <returns>Enum value</returns>
+        </member>
+        <member name="M:System.Enum`1.ToEnum(System.Int64)">
+            <summary>
+                Convert 64 bits integer value to enum value
+            </summary>
+            <param name="value">Integer value</param>
+            <returns>Enum value</returns>
+        </member>
+        <member name="M:System.Enum`1.ToEnum(System.Single)">
+            <summary>
+                Convert real value to enum value
+            </summary>
+            <param name="value">Real value</param>
+            <returns>Enum value</returns>
+        </member>
+        <member name="M:System.Enum`1.ToEnum(System.Double)">
+            <summary>
+                Convert real value to enum value
+            </summary>
+            <param name="value">Real value</param>
+            <returns>Enum value</returns>
+        </member>
+        <member name="M:System.Enum`1.ToByte(`0)">
+            <summary>
+                Convert enum value to 8 bits integer value
+            </summary>
+            <param name="value">Enum value</param>
+            <returns>Integer value</returns>
+        </member>
+        <member name="M:System.Enum`1.ToSByte(`0)">
+            <summary>
+                Convert enum value to 8 bits integer value
+            </summary>
+            <param name="value">Enum value</param>
+            <returns>Integer value</returns>
+        </member>
+        <member name="M:System.Enum`1.ToUInt16(`0)">
+            <summary>
+                Convert enum value to 16 bits integer value
+            </summary>
+            <param name="value">Enum value</param>
+            <returns>Integer value</returns>
+        </member>
+        <member name="M:System.Enum`1.ToInt16(`0)">
+            <summary>
+                Convert enum value to 16 bits integer value
+            </summary>
+            <param name="value">Enum value</param>
+            <returns>Integer value</returns>
+        </member>
+        <member name="M:System.Enum`1.ToUInt32(`0)">
+            <summary>
+                Convert enum value to 32 bits integer value
+            </summary>
+            <param name="value">Enum value</param>
+            <returns>Integer value</returns>
+        </member>
+        <member name="M:System.Enum`1.ToInt32(`0)">
+            <summary>
+                Convert enum value to 32 bits integer value
+            </summary>
+            <param name="value">Enum value</param>
+            <returns>Integer value</returns>
+        </member>
+        <member name="M:System.Enum`1.ToUInt64(`0)">
+            <summary>
+                Convert enum value to 64 bits integer value
+            </summary>
+            <param name="value">Enum value</param>
+            <returns>Integer value</returns>
+        </member>
+        <member name="M:System.Enum`1.ToInt64(`0)">
+            <summary>
+                Convert enum value to 64 bits integer value
+            </summary>
+            <param name="value">Enum value</param>
+            <returns>Integer value</returns>
+        </member>
+    </members>
+</doc>

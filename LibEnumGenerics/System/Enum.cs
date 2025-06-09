@@ -387,5 +387,167 @@ namespace System
 
             return result;
         }
+
+        /// <summary>
+        /// 列挙型の値を8ビット整数値に変換する
+        /// </summary>
+        /// <param name="value">列挙型の値</param>
+        /// <returns>整数値</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static byte ToByte(T value)
+        {
+            unsafe
+            {
+                // 値を取得する
+                return *(byte*)&value;
+            }
+        }
+
+        /// <summary>
+        /// 列挙型の値を8ビット整数値に変換する
+        /// </summary>
+        /// <param name="value">列挙型の値</param>
+        /// <returns>整数値</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static sbyte ToSByte(T value)
+        {
+            unsafe
+            {
+                // 値を取得する
+                return *(sbyte*)&value;
+            }
+        }
+
+        /// <summary>
+        /// 列挙型の値を16ビット整数値に変換する
+        /// </summary>
+        /// <param name="value">列挙型の値</param>
+        /// <returns>整数値</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static ushort ToUInt16(T value)
+        {
+            unsafe
+            {
+                // 列挙型が16ビット以上であれば16ビット分の値を取得し、
+                // 8ビットであれば8ビット分の値を取得する
+                return enumSize >= 2 ? *(ushort*)&value : *(byte*)&value;
+            }
+        }
+
+        /// <summary>
+        /// 列挙型の値を16ビット整数値に変換する
+        /// </summary>
+        /// <param name="value">列挙型の値</param>
+        /// <returns>整数値</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static short ToInt16(T value)
+        {
+            unsafe
+            {
+                // 列挙型が16ビット以上であれば16ビット分の値を取得し、
+                // 8ビットであれば8ビット分の値を取得する
+                return enumSize >= 2 ? *(short*)&value : *(sbyte*)&value;
+            }
+        }
+
+        /// <summary>
+        /// 列挙型の値を32ビット整数値に変換する
+        /// </summary>
+        /// <param name="value">列挙型の値</param>
+        /// <returns>整数値</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static uint ToUInt32(T value)
+        {
+            unsafe
+            {
+                if (enumSize >= 4)
+                {
+                    // 列挙型が32ビット以上であれば32ビット分の値を取得する
+                    return *(uint*)&value;
+                }
+                else if (enumSize == 2)
+                {
+                    // 列挙型が16ビットであれば16ビット分の値を取得する
+                    return *(ushort*)&value;
+                }
+                else
+                {
+                    // 列挙型が8ビットであればビット分の値を取得する
+                    return *(byte*)&value;
+                }
+            }
+        }
+
+        /// <summary>
+        /// 列挙型の値を32ビット整数値に変換する
+        /// </summary>
+        /// <param name="value">列挙型の値</param>
+        /// <returns>整数値</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static int ToInt32(T value)
+        {
+            unsafe
+            {
+                if (enumSize >= 4)
+                {
+                    // 列挙型が32ビット以上であれば32ビット分の値を取得する
+                    return *(int*)&value;
+                }
+                else if (enumSize == 2)
+                {
+                    // 列挙型が16ビットであれば16ビット分の値を取得する
+                    return *(short*)&value;
+                }
+                else
+                {
+                    // 列挙型が8ビットであればビット分の値を取得する
+                    return *(sbyte*)&value;
+                }
+            }
+        }
+
+        /// <summary>
+        /// 列挙型の値を64ビット整数値に変換する
+        /// </summary>
+        /// <param name="value">列挙型の値</param>
+        /// <returns>整数値</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static ulong ToUInt64(T value)
+        {
+            unsafe
+            {
+                // 列挙型のサイズに応じて値を取得する
+                return enumSize switch
+                {
+                    1 => *(byte*)&value,
+                    2 => *(ushort*)&value,
+                    4 => *(uint*)&value,
+                    8 => *(ulong*)&value,
+                    _ => default,
+                };
+            }
+        }
+
+        /// <summary>
+        /// 列挙型の値を64ビット整数値に変換する
+        /// </summary>
+        /// <param name="value">列挙型の値</param>
+        /// <returns>整数値</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static long ToInt64(T value)
+        {
+            unsafe
+            {
+                // 列挙型のサイズに応じて値を取得する
+                return enumSize switch
+                {
+                    1 => *(sbyte*)&value,
+                    2 => *(short*)&value,
+                    4 => *(int*)&value,
+                    8 => *(long*)&value,
+                    _ => default,
+                };
+            }
+        }
     }
 }

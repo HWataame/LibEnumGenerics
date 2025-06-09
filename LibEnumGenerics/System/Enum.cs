@@ -389,6 +389,28 @@ namespace System
         }
 
         /// <summary>
+        /// 実数値を列挙型の値に変換する
+        /// </summary>
+        /// <param name="value">実数値</param>
+        /// <returns>列挙型の値</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static T ToEnum(float value)
+        {
+            return ToEnum((long)value);
+        }
+
+        /// <summary>
+        /// 実数値を列挙型の値に変換する
+        /// </summary>
+        /// <param name="value">実数値</param>
+        /// <returns>列挙型の値</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static T ToEnum(double value)
+        {
+            return ToEnum((long)value);
+        }
+
+        /// <summary>
         /// 列挙型の値を8ビット整数値に変換する
         /// </summary>
         /// <param name="value">列挙型の値</param>

@@ -11,6 +11,9 @@
         <Authors>Wataame</Authors>
         <Company>Wataame</Company>
         <Copyright>2025 Wataame</Copyright>
+        <Version>2506.09.12.22</Version>
+        <AssemblyVersion>2506.09.12.22</AssemblyVersion>
+        <FileVersion>2506.09.12.22</FileVersion>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">

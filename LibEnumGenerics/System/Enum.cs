@@ -4,7 +4,7 @@
 
 Enum.cs
 ────────────────────────────────────────
-2025 Wataame
+2025 Wataame(HWataame)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 */
 using System.Runtime.CompilerServices;

@@ -1,22 +1,22 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
-    <PublishSingleFile>true</PublishSingleFile>
-    <SelfContained>true</SelfContained>
-    <NoWin32Manifest>true</NoWin32Manifest>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <Title>Enum Generics Helper Library</Title>
-    <Product>Enum Generics Helper Library</Product>
-    <Authors>Wataame</Authors>
-    <Company>Wataame</Company>
-    <Copyright>2025 Wataame</Copyright>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <PublishSingleFile>true</PublishSingleFile>
+        <SelfContained>true</SelfContained>
+        <NoWin32Manifest>true</NoWin32Manifest>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <Title>Enum Generics Helper Library</Title>
+        <Product>Enum Generics Helper Library</Product>
+        <Authors>Wataame</Authors>
+        <Company>Wataame</Company>
+        <Copyright>2025 Wataame</Copyright>
+    </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DebugType>none</DebugType>
-  </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+        <DebugType>none</DebugType>
+    </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'" />
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'" />
 
 </Project>

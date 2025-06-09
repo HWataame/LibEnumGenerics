@@ -19,6 +19,9 @@ T intValue = Enum<T>.ToInt32(enumValue);
 ```
 
 ## 導入方法 / English "How to use" is below this
+### 共通
+- [Releases](https://github.com/HWataame/LibEnumGenerics/releases)から最新版(LibEnumGenerics_xxxxxx_xxxx.zip)をダウンロードする / Download latest version (LibEnumGenerics_xxxxxx_xxxx.zip) from [Releases](https://github.com/HWataame/LibEnumGenerics/releases)
+
 ### 通常のC#プロジェクト(Visual Studio 2022)の場合
 1. (任意)「Documents」フォルダ内にある、お好みの言語名のフォルダーの「LibEnumGenerics.xml」を「LibEnumGenerics.dll」と同じフォルダーにコピーする
 2. ライブラリを参照したいプロジェクトを右クリックし、「追加(D)」から「プロジェクト参照(R)...」を選択する
@@ -27,7 +30,7 @@ T intValue = Enum<T>.ToInt32(enumValue);
 
 ### Unityのプロジェクトの場合
 1. 「LibEnumGenerics.dll」を導入するプロジェクトのAssets以下に追加する
-2. (任意)「Documents」フォルダ内にある、お好みの言語名のフォルダーの「LibEnumGenerics.xml」を手順1でdllをコピーした場所にコピーする
+2. (任意)「Documents」フォルダ内にある、お好みの言語名のフォルダーの「LibEnumGenerics.xml」を手順1でdllを追加した場所にコピーする
 3. (必要に応じて)ライブラリを参照したいAssemblyDefinitionAssetの「Override References」を有効にし、「Assembly References」の項目に「LibEnumGenerics.dll」を追加する
 
 ## How to use / 日本語の「導入方法」は上にあります
@@ -66,4 +69,4 @@ T intValue = Enum<T>.ToInt32(enumValue);
 ## ライセンス / Lisence
 2条項BSDライセンスです / Using "BSD-2-Clause license"
 
-[LISENCE](https://github.com/HWataame/LibEnumGenerics/blob/main/LICENSE)
+[LISENCE](/LICENSE)

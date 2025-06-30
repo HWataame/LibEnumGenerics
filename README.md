@@ -63,9 +63,6 @@ T intValue = Enum<T>.ToInt32(enumValue);
 
 `byte` `sbyte` `ushort` `short` `uint` `int` `ulong` `long`
 
-## 開発者情報 / Author
-[Twitter (X)](https://twitter.com/Hir_gca)
-
 ## ライセンス / Lisence
 2条項BSDライセンスです / Using "BSD-2-Clause license"
 

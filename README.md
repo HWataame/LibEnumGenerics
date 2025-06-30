@@ -64,6 +64,6 @@ T intValue = Enum<T>.ToInt32(enumValue);
 `byte` `sbyte` `ushort` `short` `uint` `int` `ulong` `long`
 
 ## ライセンス / Lisence
-2条項BSDライセンスです / Using "BSD-2-Clause license"
+MITライセンスです / Using "MIT License"
 
 [LISENCE](/LICENSE)

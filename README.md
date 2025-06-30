@@ -63,7 +63,7 @@ T intValue = Enum<T>.ToInt32(enumValue);
 
 `byte` `sbyte` `ushort` `short` `uint` `int` `ulong` `long`
 
-## ライセンス / Lisence
+## ライセンス / License
 MITライセンスです / Using "MIT License"
 
 [LISENCE](/LICENSE)
